@@ -16,5 +16,13 @@ namespace ctlClockLib
         {
             InitializeComponent();
         }
+
+        // make it protected and overridable with virtual keyword
+        protected virtual void timer1_Tick ( object sender, EventArgs e )
+        {
+            // Causes the label to display the current time.
+            lblDisplay.Text = DateTime.Now.ToLongTimeString();
+
+        }
     }
 }
