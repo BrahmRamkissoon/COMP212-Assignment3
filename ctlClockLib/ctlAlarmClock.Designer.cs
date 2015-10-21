@@ -29,6 +29,7 @@
         private void InitializeComponent ()
         {
             this.lblAlarm = new System.Windows.Forms.Label();
+            this.btnAlarmOff = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblAlarm
@@ -42,12 +43,24 @@
             this.lblAlarm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblAlarm.Visible = false;
             // 
+            // btnAlarmOff
+            // 
+            this.btnAlarmOff.Location = new System.Drawing.Point(76, 25);
+            this.btnAlarmOff.Name = "btnAlarmOff";
+            this.btnAlarmOff.Size = new System.Drawing.Size(75, 23);
+            this.btnAlarmOff.TabIndex = 2;
+            this.btnAlarmOff.Text = "Disable Alarm";
+            this.btnAlarmOff.UseVisualStyleBackColor = true;
+            this.btnAlarmOff.Click += new System.EventHandler(this.btnAlarmOff_Click);
+            // 
             // ctlAlarmClock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.Controls.Add(this.btnAlarmOff);
             this.Controls.Add(this.lblAlarm);
             this.Name = "ctlAlarmClock";
             this.Controls.SetChildIndex(this.lblAlarm, 0);
+            this.Controls.SetChildIndex(this.btnAlarmOff, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,5 +69,6 @@
         #endregion
 
         private System.Windows.Forms.Label lblAlarm;
+        private System.Windows.Forms.Button btnAlarmOff;
     }
 }

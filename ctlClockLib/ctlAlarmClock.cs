@@ -3,6 +3,8 @@
 // Created Date  (dd/mm/yyyy): 21/10/2015
 // Description: inherit from ctlClock
 // Revisions    - add color flash functionality on alarm
+//              - added alarm functionality
+//              - added button to turn off alarm
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,6 +92,15 @@ namespace ctlClockLib
                     lblAlarm.Visible = false;
                 }
             }
+        }
+
+        private void btnAlarmOff_Click ( object sender, EventArgs e )
+        {
+            // Turns off the alarm.
+            AlarmSet = false;
+
+            // Hides the flashing label
+            lblAlarm.Visible = false;
         }
     }
 }
