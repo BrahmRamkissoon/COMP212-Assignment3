@@ -55,6 +55,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.lblDisplay);
             this.Name = "ctlClock";
+            this.Size = new System.Drawing.Size(151, 46);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -42,6 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ctlAlarmClock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlAlarmClock.Designer.cs">
+      <DependentUpon>ctlAlarmClock.cs</DependentUpon>
+    </Compile>
     <Compile Include="ctlClock.cs">
       <SubType>UserControl</SubType>
     </Compile>

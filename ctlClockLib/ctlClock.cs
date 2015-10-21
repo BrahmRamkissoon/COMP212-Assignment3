@@ -22,7 +22,7 @@ namespace ctlClockLib
     public partial class ctlClock: UserControl
     {
         // Private Variables
-        private Color colBColor;
+        private Color _colBColor;
 
         // Public properties
         // Declares name and type of prop
@@ -31,15 +31,15 @@ namespace ctlClockLib
             // Retrieves the value of the private variable colBColor
             get
             {
-                return colBColor;
+                return _colBColor;
             }
 
             // Stores the selected value in the private variable colBColor, and
             // Updates the background color of the label control lblDisplay.
             set
             {
-                colBColor = value;
-                lblDisplay.BackColor = colBColor;
+                _colBColor = value;
+                lblDisplay.BackColor = _colBColor;
             }
         }
         public ctlClock()
